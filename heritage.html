@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title> HSbuilds - Heritage Chapter</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sanitize.css">
+    <meta name="keywords" content="Heritage High School, HSbuilds, Vedant Joshi, Rayan Mohammad, Yoshua Alexander, Sai Annabathini, Mohana Dayyum, Rishitha Duggi">
+    <meta name="description" content="Heritage High School builds: Meet the team behind HSbuilds at Heritage High School, including Vedant Joshi, Rayan Mohammad, Yoshua Alexander, Sai Annabathini, Mohana Dayyum, and Rishitha Duggi. Learn about their roles and responsibilities.">
+    <meta property="og:url" content="https://www.hsbuilds.org">
+    <meta property="og:title" content="HSBuilds - Heritage Team">
+    <meta property="og:description" content="Meet the team behind HSbuilds at Heritage High School, including Vedant Joshi, Rayan Mohammad, Yoshua Alexander, Sai Annabathini, Mohana Dayyum, and Rishitha Duggi. Learn about their roles and responsibilities.">
+    <meta property="og:image" content="https://hsbuilds.org/images/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Bibhas Sharma">
+</head>
+
+<style>
+    html,
+    body {
+        overflow-x: hidden;
+        background: #000;
+    }
+
+    * {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    section {
+        padding: 100px;
+    }
+
+    .button {
+        position: relative;
+        display: inline-block;
+        margin-top: 25px;
+        background: white;
+        padding: 18px 38px;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 900;
+        transition: all .6s ease;
+        color: #fff;
+        border: 3px solid white;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.05;
+        background-color: #0600ff;
+        outline: none;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 0.65rem lightgray);
+        margin-top: 50px;
+    }
+
+    .button:hover {
+        background-color: #000;
+        color: white;
+        border-color: wheat;
+        border-radius: 1em;
+        filter: drop-shadow(0 0 1.00rem #120eb1);
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 50px;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.8s;
+        color: #fff;
+    }
+
+    .sticky {
+        background: #e6e6e6;
+        padding: 20px 100px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .logo {
+        color: #0b0705;
+        font-size: 28px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .sticky ul li a {
+        color: #0600ff;
+    }
+
+    .sticky .logo {
+        color: #0600ff;
+    }
+
+    header ul {
+        position: relative;
+        display: flex;
+    }
+
+    header ul li {
+        position: relative;
+        list-style: none;
+    }
+
+    header ul li a {
+        position: relative;
+        display: inline-block;
+        margin: 0 15px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .boarders {
+        background-color: #f8f8f8;
+        position: relative;
+    }
+
+    .boarders .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .content .boarderBox {
+        flex: 1 0 0;
+        max-width: 600px;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        box-shadow: rgba(128, 0, 0, 0.2) 0px 50px 100px -20px, rgba(197, 179, 88, 0.2) 0px 30px 60px -30px, rgba(128, 0, 0, 0.2) 0px -2px 6px 0px inset;
+        text-align: center;
+        position: relative;
+        transition: box-shadow 0.3s ease;
+    }
+
+
+    .content .boarderBox::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        z-index: 1;
+        border-radius: 5px;
+        background-size: 200% 200%;
+        background-position: 0 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .content .boarderBox:hover::after {
+        opacity: 1;
+    }
+
+    .boarders .content .boarderBox h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .boarders .content .boarderBox p {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .boarders .content .boarderBox img {
+        width: 100%;
+        border: 2px solid #dcdcdc;
+        border-radius: 5px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .heading {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #111;
+    }
+
+    .heading h2 {
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    @media (max-width: 1025px) {
+
+        header,
+        header.sticky {
+            padding: 20px 50px;
+            z-index: 1000;
+            align-items: center;
+        }
+
+        .menu {
+            position: fixed;
+            top: 75px;
+            right: -100%;
+            display: block;
+            padding: 100px 50px;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background: #ededed;
+            transition: 0.5s;
+            z-index: 999;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .menu.active {
+            right: 0;
+        }
+
+        header ul li a {
+            color: #000;
+            font-size: 23px;
+            margin: 15px;
+        }
+
+        .toggle {
+            transition: 0.75s;
+            width: 40px;
+            height: 40px;
+            background: url(images/menu.png);
+            filter: invert(1);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            cursor: pointer;
+        }
+
+        .toggle.active {
+            transition: 0.75s;
+            background: url(images/close.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            cursor: pointer;
+        }
+
+        header.sticky .toggle {
+            filter: invert(1);
+        }
+
+        section {
+            padding: 100px 50px;
+        }
+
+        .logo {
+            font-size: 15px;
+        }
+
+        .banner {
+            padding: 5px 50px 100px;
+        }
+
+        .banner h2 {
+            font-size: 1.45em;
+        }
+
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+
+        .heading h2 {
+            font-size: 22px;
+        }
+
+        .boarders .content .boarderBox img {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .boarders .content .boarderBox h2 {
+            font-size: 13px;
+        }
+
+        .boarders .content .boarderBox p {
+            font-size: 14px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .boarders .content .boarderBox {
+            padding: 45px 5px;
+            text-align: center;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to bottom, #800000, #C5B358);
+        border-radius: 10px;
+    }
+
+</style>
+
+<body>
+    <header class="">
+        <a href="index.html" class="logo">HSbuilds</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="https://hsbuilds.org/#how-it-works" onclick="toggleMenu();">How it works</a></li>
+            <li><a href="https://hsbuilds.org/#team" onclick="toggleMenu();">About Our Team</a></li>
+            <li><a href="https://hsbuilds.org/#clients" onclick="toggleMenu();">Clients</a></li>
+            <li><a href="https://hsbuilds.org/#faq" onclick="toggleMenu();">FAQ</a></li>
+            <li><a href="https://hsbuilds.org/#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="boarders">
+        <div class="heading">
+            <h2>Heritage High School</h2>
+            <p>Who started HSbuilds at Heriage High School?</p>
+        </div>
+        <div class="content">
+
+            <div class="boarderBox aos-init aos-animate" data-aos="fade-in">
+                <img src="images/Vedant%20J.png" alt="Image Of Vedant Joshi" class="">
+                <h2>Vedant Joshi</h2>
+                <h4>President</h4><br>
+                <p></p><br>
+            </div>
+            <div class="boarderBox aos-init aos-animate" data-aos="fade-in">
+                <img src="images/Rayhan%20M.png" alt="Image Of Rayan Mohammad" class="">
+                <h2>Rayan Mohammad</h2>
+                <h4>Vice President</h4><br>
+                <p></p><br>
+            </div>
+            <div class="boarderBox aos-init aos-animate" data-aos="fade-in">
+                <img src="images/Yoshua%20A.png" alt="Image Of Yoshua Alexander" class="">
+                <h2>Yoshua Alexander</h2>
+                <h4>Secretary</h4><br>
+                <p></p><br>
+            </div>
+            <div class="boarderBox aos-init aos-animate" data-aos="fade-in">
+                <img src="images/Sai%20A.png" alt="Image Of Sai Annabathini" class="">
+                <h2>Sai Annabathini</h2>
+                <h4>Treasurer</h4><br>
+                <p></p><br>
+            </div>
+            <div class="boarderBox aos-init aos-animate" data-aos="fade-in">
+                <img src="images/Monhana%20D.png" alt="Image Of Mohana Dayyum" class="">
+                <h2>Mohana Dayyum</h2>
+                <h4>Social Media Manger</h4><br>
+                <p></p><br>
+            </div>
+            <div class="boarderBox aos-init aos-animate" data-aos="fade-in">
+                <img src="images/Rishitha%20D.png" alt="Image Of Rishitha Duggi" class="">
+                <h2>Rishitha Duggi</h2>
+                <h4>Social Media Manger</h4><br>
+                <p></p><br><br><br>
+            </div>
+        </div>
+        <div style="align-content: center;text-align:center;margin-top: 50px;display: flex;flex-direction: column;justify-content: flex-start;align-items: center;">
+            <p style="max-width: 745px;">Welcome to HSbuilds chapter at Heritage High School dedicated to empowering small businesses and clubs through the art of code. We specialize in crafting dynamic websites, providing an avenue for growth and digital presence in our community.</p>
+            <a href="index.html" class="button">Go back </a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background: #202326;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    background: white;
+    padding: 18px 38px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    transition: all .6s ease;
+    color: #fff;
+    border: 3px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.05;
+    background-color: #0600ff;
+    outline: none;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.65rem lightgray);
+    margin-top: 50px;
+}
+
+.button:hover {
+    background-color: #000;
+    color: white;
+    border-color: wheat;
+    border-radius: 1em;
+    filter: drop-shadow(0 0 1.00rem #120eb1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.8s;
+    color: #fff;
+}
+
+.sticky {
+    background: #e6e6e6;
+    padding: 20px 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+    color: #0b0705;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.sticky ul li a {
+    color: #0600ff;
+}
+
+.sticky .logo {
+    color: #0600ff;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+@media (max-width: 1025px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .menu {
+        position: fixed;
+        top: 75px;
+        right: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #ededed;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    header ul li a {
+        color: #000;
+        font-size: 23px;
+        margin: 15px;
+    }
+
+    .toggle {
+        transition: 0.75s;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        filter: invert(1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        transition: 0.75s;
+        background: url(images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .banner {
+        padding: 5px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.45em;
+    }
+
+    .button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .heading h2 {
+        font-size: 22px;
+    }
+
+    .boarders .content .boarderBox img {
+        width: 95%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #090979, #00d4ff, #ffffff, #ffffff, #ffffff);
+    border-radius: 10px;
+}
+
+
+/* starting here is workshop code */
+
+
+.sidenav {
+    width: 185px;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    background: #f9f9f9;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.sidenav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.sidenav a:hover {
+    color: #062420;
+    background: #a3a3a3;
+    transition: color 0.6s ease, background 0.6s ease;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 24px;
+    border: 2px solid black;
+    background-color: #2e3236;
+    color: #fff;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
