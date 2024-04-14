@@ -1,6 +1,6 @@
 # Welcome to HSbuilds
 
-![HSbuilds Logo]([URL-to-HSbuilds-Logo](https://hsbuilds.org/images/hsbulds.png))
+![HSbuilds Logo]([HSbuilds-Logo](https://hsbuilds.org/images/hsbulds.png))
 
 ## Our Mission
 
