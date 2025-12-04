@@ -17,28 +17,23 @@ A static multi-page website for HSbuilds built with HTML, CSS, and JavaScript, d
 ---
 
 ## 📁 Project Structure
-
-HSbuilds/
-├── index.html              # Homepage
-├── style.css               # Global styles
-├── sanitize.css            # CSS normalization
-├── main.js                 # Main JavaScript logic
-├── netlify.toml            # Netlify deployment configuration
-├── images/                 # Image assets
-│
-├── 404.html                # Custom 404 error page
-├── workshops.html          # Workshops page
-├── workshop.css            # Workshops-specific styles
-│
-├── allen.html              # Allen page
-├── heritage.html           # Heritage page
-├── centennial.html         # Centennial page
-├── chapters.html           # Chapters page
-│
-├── videoexample.html       # Video example page
-├── videoexample.mp4        # Example video file
-│
-└── README.md               # This file
+- HSbuilds/
+  - index.html — Homepage
+  - style.css — Global styles
+  - sanitize.css — CSS normalization
+  - main.js — Main JavaScript logic
+  - netlify.toml — Netlify deployment configuration
+  - images/ — Image assets
+  - 404.html — Custom 404 error page
+  - workshops.html — Workshops page
+  - workshop.css — Workshops-specific styles
+  - allen.html — Allen page
+  - heritage.html — Heritage page
+  - centennial.html — Centennial page
+  - chapters.html — Chapters page
+  - videoexample.html — Video example page
+  - videoexample.mp4 — Example video file
+  - README.md — This file
 
 ---
 
