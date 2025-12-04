@@ -2,118 +2,104 @@
 
 ![HSbuilds Logo](https://raw.githubusercontent.com/BibhasS/HSbuilds-website/main/images/hsbulds.png)
 
-This repository contains the **source code for the HSbuilds website**.  
-It is a static multi-page website built using HTML, CSS, and JavaScript and deployed through Netlify.
+A static multi-page website for HSbuilds built with HTML, CSS, and JavaScript, deployed via Netlify.
 
 ---
 
-## Tech Stack
+## 📋 Tech Stack
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Netlify (Hosting & Deployment)  
-- Sanitize.css (Browser consistency)  
+- **HTML5** - Markup structure
+- **CSS3** - Styling and layout
+- **JavaScript** - Interactive functionality
+- **Netlify** - Hosting and continuous deployment
+- **Sanitize.css** - CSS normalization for browser consistency
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
-\`\`\`
 HSbuilds/
+├── index.html              # Homepage
+├── style.css               # Global styles
+├── sanitize.css            # CSS normalization
+├── main.js                 # Main JavaScript logic
+├── netlify.toml            # Netlify deployment configuration
+├── images/                 # Image assets
 │
-├── index.html           # Homepage
-├── style.css            # Global styles
-├── sanitize.css         # CSS normalization
-├── main.js              # Frontend logic
-├── netlify.toml         # Netlify config
-├── images/              # Assets
+├── 404.html                # Custom 404 error page
+├── workshops.html          # Workshops page
+├── workshop.css            # Workshops-specific styles
 │
-├── 404.html             # Custom 404 page
-├── workshops.html       # Workshop page
-├── workshop.css         # Workshop styles
+├── allen.html              # Allen page
+├── heritage.html           # Heritage page
+├── centennial.html         # Centennial page
+├── chapters.html           # Chapters page
 │
-├── allen.html
-├── heritage.html
-├── centennial.html
-├── chapters.html
+├── videoexample.html       # Video example page
+├── videoexample.mp4        # Example video file
 │
-├── videoexample.html
-├── videoexample.mp4
-│
-└── README.md
-\`\`\`
+└── README.md               # This file
 
 ---
 
-## How to Run Locally
+## 🚀 Getting Started
 
-### Option 1: Open in Browser
-Open `index.html` directly in your browser.
+### Prerequisites
+- A modern web browser
+- (Optional) VS Code with Live Server extension
 
-### Option 2: Using Live Server (Recommended)
-1. Open the project folder in VS Code  
-2. Install the **Live Server** extension  
-3. Right-click `index.html`  
-4. Click **Open with Live Server**  
+### Running Locally
 
----
+**Option 1: Direct Browser Opening**
+Simply open `index.html` in your preferred browser.
 
-## Deployment
-
-This site is deployed using **Netlify**.
-
-To redeploy:
-1. Push changes to the `main` branch  
-2. Netlify will automatically rebuild the site  
-
-Deployment settings are managed in:
-
-\`\`\`
-netlify.toml
-\`\`\`
+**Option 2: Live Server (Recommended for Development)**
+1. Open the project in VS Code
+2. Install the "Live Server" extension if not already installed
+3. Right-click on `index.html`
+4. Select "Open with Live Server"
+5. The site will open at `http://localhost:5500` (or similar) with live reload
 
 ---
 
-## Editing Guide
 
-### Modify Content
-Update HTML files directly (e.g., `index.html`, `workshops.html`, etc.).
+## 🛠️ Development Guide
 
-### Modify Styling
-- `style.css` → global styles  
-- `workshop.css` → workshop page styles  
+### Editing Content
+- **Page Content**: Edit the respective `.html` files
+- **Global Styles**: Modify `style.css`
+- **Page-specific Styles**: Update `workshop.css` for workshops page
+- **JavaScript**: Edit `main.js` for site-wide functionality
 
-### Update Images
-Add or replace assets in:
+### Adding/Updating Assets
+1. Place images in the `images/` directory
+2. Update HTML references to use correct paths (e.g., `images/filename.jpg`)
 
-\`\`\`
-images/
-\`\`\`
-
-Then update the image paths inside the HTML.
-
-### JavaScript Logic
-Edit:
-
-\`\`\`
-main.js
-\`\`\`
+### Adding New Pages
+1. Create a new `.html` file
+2. Link to it from existing navigation
+3. Add page-specific styles if needed
 
 ---
 
-## Contributors
+## 📄 License
 
-- Bibhas Sharma  
-- Sreekar Jarajapu  
-- Narein Vignesh  
-- Abhi Reddy  
-- Anvi Siddabhattuni  
-- Christian Fowler  
+Maintained by HSbuilds contributors. All rights reserved unless otherwise specified.
 
 ---
 
-## License
+## 🐛 Troubleshooting
 
-Maintained by HSbuilds contributors.  
-All rights reserved unless otherwise specified.
+### Common Issues
+1. **Images not loading**: Check file paths in the `images/` directory
+2. **Styles not applying**: Clear browser cache or use hard refresh (`Ctrl+F5` / `Cmd+Shift+R`)
+3. **Live Server not working**: Ensure the extension is installed and activated
+
+### Netlify Deployment Issues
+- Check the Netlify deployment logs for error messages
+- Verify `netlify.toml` configuration
+- Ensure all file paths are correct (case-sensitive)
+
+---
+
+**Note**: This is a static website - no backend or database is required for operation.
