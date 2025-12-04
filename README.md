@@ -1,23 +1,110 @@
-# Welcome to HSbuilds
+# HSbuilds Website
 
 ![HSbuilds Logo](https://raw.githubusercontent.com/BibhasS/HSbuilds-website/main/images/hsbulds.png)
 
-## Our Mission
+This repository contains the **source code for the HSbuilds website**.  
+It is a static multi-page website built using HTML, CSS, and JavaScript and deployed through Netlify.
 
-At HSbuilds, our goal is to develop premium websites for organizations and start-up businesses. We provide an exceptional service where you can obtain a website tailored specifically to your needs, completely free of charge.
+---
 
-## How It Works
+## Tech Stack
 
-1. **Bring Your Idea:** Start with an original idea for your online presence.
-2. **Fill Out Our Form:** Provide us with the details of your vision through our simple form.
-3. **Design and Development:** Our elite team of coders and a highly skilled, self-taught website developer will take your concept and turn it into a functional and beautifully designed website.
-4. **Final Touches:** Our expert developer will guide you through the design process to ensure every detail is perfect, guaranteeing a website that not only meets but exceeds your expectations.
+- HTML5  
+- CSS3  
+- JavaScript  
+- Netlify (Hosting & Deployment)  
+- Sanitize.css (Browser consistency)  
 
-### Who We Serve
+---
 
-Whether you are a school club or a small business, HSBuilds is here to help you establish a powerful and professional online presence. 
+## Project Structure
 
-### Why Choose Us?
+\`\`\`
+HSbuilds/
+│
+├── index.html           # Homepage
+├── style.css            # Global styles
+├── sanitize.css         # CSS normalization
+├── main.js              # Frontend logic
+├── netlify.toml         # Netlify config
+├── images/              # Assets
+│
+├── 404.html             # Custom 404 page
+├── workshops.html       # Workshop page
+├── workshop.css         # Workshop styles
+│
+├── allen.html
+├── heritage.html
+├── centennial.html
+├── chapters.html
+│
+├── videoexample.html
+├── videoexample.mp4
+│
+└── README.md
+\`\`\`
 
-HSBuilds combines expertise, passion, and a commitment to quality to provide you with a seamless website creation experience. Don't wait to start building your dream online. Realize your potential with HSBuilds today!
+---
 
+## How to Run Locally
+
+### Option 1: Open in Browser
+Open `index.html` directly in your browser.
+
+### Option 2: Using Live Server (Recommended)
+1. Open the project folder in VS Code  
+2. Install the **Live Server** extension  
+3. Right-click `index.html`  
+4. Click **Open with Live Server**  
+
+---
+
+## Deployment
+
+This site is deployed using **Netlify**.
+
+To redeploy:
+1. Push changes to the `main` branch  
+2. Netlify will automatically rebuild the site  
+
+Deployment settings are managed in:
+
+\`\`\`
+netlify.toml
+\`\`\`
+
+---
+
+## Editing Guide
+
+### Modify Content
+Update HTML files directly (e.g., `index.html`, `workshops.html`, etc.).
+
+### Modify Styling
+- `style.css` → global styles  
+- `workshop.css` → workshop page styles  
+
+### Update Images
+Add or replace assets in:
+
+\`\`\`
+images/
+\`\`\`
+
+Then update the image paths inside the HTML.
+
+### JavaScript Logic
+Edit:
+
+\`\`\`
+main.js
+\`\`\`
+
+---
+
+
+
+## License
+
+Maintained by HSbuilds contributors.  
+All rights reserved unless otherwise specified.
